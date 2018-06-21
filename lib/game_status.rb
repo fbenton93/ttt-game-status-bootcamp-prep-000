@@ -26,14 +26,16 @@ def won?(board)
     position_3 = board[windex_3]
   
     if position_1 == "X" && position_2 == "X" && position_3 == "X"
-      return([windex_1,windex_2,windex_3])
-    elsif position_1 == "O" && position_2 == "O" && position_3 == "O"
-      return([windex_1,windex_2,windex_3])
-    else
-      return false
+      return [windex_1,windex_2,windex_3]
+    end
+    
+    if position_1 == "O" && position_2 == "O" && position_3 == "O"
+      return [windex_1,windex_2,windex_3]
     end
     
   end
+  
+  return false
   
 end
   
