@@ -43,8 +43,7 @@ end
   
 def full?(board)
   board.all? do |place|
-    if place != "X" && place != "O"
-      return false
+    place.include?("X") || place.include?("O")
     end
   end
 end
