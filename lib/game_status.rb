@@ -29,7 +29,7 @@ def won?(board)
     if position_1 == "X" && position_2 == "X" && position_3 == "X"
       return [windex_1,windex_2,windex_3]
     else 
-      false 
+      return false 
     end 
   end
 end
