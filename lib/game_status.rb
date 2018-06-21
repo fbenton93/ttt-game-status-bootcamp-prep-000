@@ -40,7 +40,11 @@ def won?(board)
 end
   
 def full?(board)
-  board.
+  board.all? |place|
+    if place != "X" && place != "O"
+      false
+    end
+  end
 end
   
   
