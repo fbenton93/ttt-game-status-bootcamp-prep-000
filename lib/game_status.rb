@@ -68,6 +68,6 @@ end
 def winner(board)
   winning_spots = won?(board)
   winner_value = winning_spots[0]
-  return board(winner_value)
+  return board[winner_value]
 end
   
