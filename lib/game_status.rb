@@ -64,4 +64,9 @@ def over?(board)
     false
   end
 end
+
+def winner(board)
+  array = won?(board)
+  return array[0]
+end
   
