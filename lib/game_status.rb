@@ -66,7 +66,8 @@ def over?(board)
 end
 
 def winner(board)
-  array = won?(board)
-  return array[0]
+  winning_spots = won?(board)
+  winner_value = winning_spots[0]
+  return board(winner_value)
 end
   
