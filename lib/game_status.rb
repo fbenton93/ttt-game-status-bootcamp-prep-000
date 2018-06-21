@@ -44,7 +44,7 @@ end
 def full?(board)
   board.all? |place|
     if place != "X" && place != "O"
-      false
+      return false
     end
   end
 end
