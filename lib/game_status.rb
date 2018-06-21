@@ -17,7 +17,7 @@ WIN_COMBINATIONS = [
 ]
   
 def won?(board)
-  WIN_COMBINATIONS.any? |element|
+  WIN_COMBINATIONS.each |element|
     windex_1 = element[0]
     windex_2 = element[1]
     windex_3 = element[2]
