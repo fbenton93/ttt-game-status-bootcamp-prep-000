@@ -46,6 +46,14 @@ def full?(board)
     place.include?("X") || place.include?("O")
   end
 end
+
+def draw?(board)
+  if full?(board) == true && won?(board) == false
+    return true
+  end
+  
+  
+end
   
   
   
