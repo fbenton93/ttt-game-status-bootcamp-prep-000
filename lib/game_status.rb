@@ -12,9 +12,15 @@ WIN_COMBINATIONS = [
   [2,5,8],
   [0,4,8],
   [2,4,6]
-  ]
+]
   
+def won?(board)
+  WIN_COMBINATIONS.each do |element|
+  windex_1 = element[0]
+  windex_2 = element[1]
+  windex_3 = element[2]
   
+  board(windex_1)
   
   
   
