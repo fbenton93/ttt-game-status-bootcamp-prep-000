@@ -32,6 +32,7 @@ def won?(board)
       return [windex_1,windex_2,windex_3]
     else
       return false
+    end
   end
   
   return nil
